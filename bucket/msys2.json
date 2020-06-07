@@ -5,8 +5,8 @@
     "license": "GPL-2.0-only|BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "http://repo.msys2.org/distrib/x86_64/msys2-base-x86_64-20200602.tar.xz",
-            "hash": "598ceeaa3e2ccf86a25a2e3c449d00a9fd35300e36011bee610036dfa59d670a",
+            "url": "https://downloads.sourceforge.net/project/msys2/Base/x86_64/msys2-base-x86_64-20200602.tar.xz",
+            "hash": "sha1:acb80cdba391dadeeb630419c8acef2bd47111fb",
             "extract_dir": "msys64"
         }
     },
@@ -32,14 +32,13 @@
     ],
     "persist": "home",
     "checkver": {
-        "url": "http://repo.msys2.org/distrib/x86_64/",
-        "re": "msys2-base-x86_64-(\\d+).tar.xz",
-        "reverse": true
+        "url": "https://sourceforge.net/projects/msys2/files/Base/x86_64/",
+        "re": "msys2-base-x86_64-(\\d+).tar.xz"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://repo.msys2.org/distrib/x86_64/msys2-base-x86_64-$version.tar.xz"
+                "url": "https://downloads.sourceforge.net/project/msys2/Base/x86_64/msys2-base-x86_64-$version.tar.xz"
             }
         }
     }
